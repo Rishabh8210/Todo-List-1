@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <style>
+        * {
+            padding: 0%;
+            margin: 0%;
+        }
+
+        body {
+            background: linear-gradient(to bottom right, #ffffff 23%, #ffcccc 69%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* width: 100%; */
+            height: 100vh;
+            
+        }
+
+        .container {
+            
+            width: 500px;
+            border-radius: 5px;
+            /* border: 2px solid grey; */
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+            flex-direction: column;
+            background-color: whitesmoke;
+        }
+
+        header {
+            /* width: 100%; */
+            height: 76px;
+            color: white;
+            text-align: center;
+            background-color: blue;
+            border-radius: 7px;
+            border:2px solid blue;
+        }
+
+        h1 {
+            margin-top: 7px;
+            display: inline-block;
+            padding: 3px 1px;
+        }
+
+       
+        .Itemname {
+            font-size: 21px;
+            padding: 0px;
+            font-family: cursive;
+            border: 2px solid grey;
+            /* border-top-color: blue; */
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        
+
+        li {
+            display: block;
+            height: 36px;
+            padding: 2px;
+
+            padding-left: 7px;
+            list-style-type: none;
+            /* border: 1px solid grey; */
+            border-bottom: 5px;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        li input[type='checkbox'] {
+            float: right;
+            height: 28px;
+            width: 57px;
+            margin-top: 4px;
+        }
+
+        li input[type='checkbox']:hover {
+            cursor: pointer;
+        }
+
+        hr {
+            background-color: rgb(255, 255, 255);
+            height: 3px;
+            width: 54%;
+            margin-left: 114px;
+            margin-top: 3px;
+        }
+        @media only screen and (min-width:300px) and (max-width:500px)
+        {
+            .container {
+            width: 300px;
+            border-radius: 5px;
+            /* border: 2px solid grey; */
+            display: flex;
+            /* justify-content: center; */
+            /* align-items: center; */
+            flex-direction: column;
+            background-color: whitesmoke;
+        }
+
+        header {
+            /* width: 100%; */
+            height: 70px;
+            font-family: 'Trebuchet MS', sans-serif;
+            color: white;
+            text-align: center;
+            background-color: rgb(255, 0, 242);
+            border-radius: 6px;
+            border:2px solid  rgb(255, 0, 242);
+        }
+
+        h1 {
+            margin-top: 7px;
+            display: inline-block;
+            padding: 3px 1px;
+        }
+
+       
+        .Itemname {
+            font-size: 18px;
+            padding: 0px;
+            font-family: cursive;
+            border: 2px solid grey;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+        
+
+        li {
+            display: block;
+            height: 36px;
+            padding: 2px;
+
+            padding-left: 7px;
+            list-style-type: none;
+            /* border: 1px solid grey; */
+            border-bottom: 5px;
+            border-radius: 5px;
+            margin-top: 3px;
+        }
+
+        li input[type='checkbox'] {
+            float: right;
+            height: 18px;
+            width: 40px;
+            margin-top: 3px;
+        }
+
+        li input[type='checkbox']:hover {
+            cursor: pointer;
+        }
+
+        hr {
+            background-color: rgb(255, 255, 255);
+            height: 3px;
+            width: 54%;
+            margin-left: 70px;
+            margin-top: 3px;
+        }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="headerr">
+            <header>
+                <h1>To - Do List</h1>
+                <hr>
+            </header>
+        </div>
+        <div class="item">
+            <ul class="Itemname">
+                <li><a>Break-fast</a>
+                    <input type="checkbox" name="" id="">
+                    
+                </li>
+                <li><a>Data-Structure</a>
+                    <input type="checkbox" name="" id="">
+                </li>
+                <li><a>Lunch</a>
+                    <input type="checkbox" name="" id="">
+                </li>
+                <li>Web-Development
+                    <input type="checkbox" name="" id="">
+                </li>
+                <li><a>Evening Walk</a>
+                    <input type="checkbox" name="" id="">
+                </li>
+                <li><a>Dinner</a>
+                    <input type="checkbox" name="" id="">
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+
+</html>
